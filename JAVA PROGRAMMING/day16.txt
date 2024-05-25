@@ -1,0 +1,20 @@
+public class Branching {
+	public static void main  (String [] args) {
+		int initial , limit = 10;
+		for (initial =1; initial<=limit; initial++){
+			if (initial ==5) {
+				continue;
+			}
+			System.out.println(initial);
+		}
+
+		
+	}
+}
+
+
+
+
+braching = controls the execution of  a loop
+	*continue
+	*break

@@ -1,0 +1,111 @@
+	
+
+RELATIONAL =used in two different values: comparison and equality
+------------------------------------------------------------------------ 
+comparison:  < , >, <=, >=
+
+public class operators() {
+
+	public static void relational () {
+		int a = 69,b= 3;
+		System.out.println(a<b); //false 2
+		System.out.println(a>b); //true
+		System.out.println(a<=b); //false 3
+		System.out.println(a>=b); //true		
+		
+}
+}
+-----------------------------------------------------------------------------
+equality: ==,!=
+
+public class operators {
+
+	public static void relational () {
+		int a = 69,b= 3;
+		System.out.println(a==b); 
+		System.out.println(a!=b); 		
+	
+}
+}
+----------------------------------------------------------------------------
+
+  AND			OR
+  & / &&               | / ||
+
+
+T and T = T        T or T = T
+T and F = F	   T or F = T		
+F and T = F	   F or T = T					
+F and F = F	   F or F = F
+
+------------------------------------------------------------------------
+BITWISE = & , |
+
+public class operators {
+
+	public static void and (){
+		int a = 5,b= 10, c=8;
+				 // 1st       2nd  
+		System.out.println(a++<=c & (a+c)==b); 
+			
+		
+}
+}
+-------------------------------------------------------------------------
+public class operators {
+
+	public static void or () {
+		int a = 23,b= 41, c=33;
+
+			//        1st     2nd    3rd
+		System.out.println(a>=b || a>b | b++!=a); 
+			//        false   false  true
+					
+ 	}
+}
+
+--------------------------------------------------------------------
+LOGICAL = && , ||
+
+public class operators {
+
+	public static void and () {
+		int a = 5,b= 10, c=8;
+				 // 1st       2nd         3rd
+		System.out.println(a++<=c & (a+c)==b) && (c<<2)>a; 
+			
+		
+}
+}
+------------------------------------------------------------------------
+public class operators {
+
+	public static void or () {
+		int a = 23,b= 41, c=33;
+
+			//        1st     2nd    3rd
+		System.out.println(a>=b || a>b | b++!=a); 
+			//        false   false  true
+					
+ 	}
+}
+
+
+-----------------------------------------------------------------------
+
+ASSIGNMENT = used to assign value to variable
+
+
+
+public class operator {
+
+	public static void assign () {
+		int a = 5,b= 10;
+		System.out.println(a); //5
+		System.out.println(a+=b); // a = a+b:
+		System.out.println(b); // 10
+		System.out.println(a); // 15	
+	}
+}		
+
+	

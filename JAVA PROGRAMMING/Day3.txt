@@ -1,0 +1,89 @@
+public class Declaration{
+	public static void declare(){
+		String word = "hi" = "Noriel";
+		System.out.println(word + "Poging" + name);
+		int num1 = 7, num = 23;
+		String ayt = "The sum"
+		System.out.println(num1 + num2 + ayt);
+		System.out.println(ayt +num1 + num2 );
+		System.out.println(num1 + ayt  + num2 )
+
+
+Variables = containers for storing data value
+Data Types = indicates what type of data is to be stored 
+Value
+
+
+Variable	Method		Access
+static		static		true	
+instance	static		false
+static		instance	true
+instance	instance	true		 
+
+
+Three types of variable:
+
+LOCAL
+       *can be found inside a method	
+       *can be used only inside the method where it is declared
+
+	public class Variables {
+		public static void identifyVar(){
+			String firstname = "name";
+			System.out.println(firstname);
+	}
+
+	public static void walalang() {
+		firstname = "nickname"
+		System.out.print(firstname);
+	}
+		
+    }
+
+STATIC
+	*can be found outside any method but inside a class
+	*can be used everywhere in the program
+
+	public class Variables {
+		static String middleName;
+		public static void idengtifyVAr(){
+			String firstname = "name"
+			System.out.println(firstName + "" middleName);
+	     
+	public static void walalang() {
+		middleName = "Arellano";
+		System.out.println(middleName)
+             }
+	public void isap() {
+		middleName = "Balbautog";
+		System.out.println(middleName);
+	     }
+	}
+	
+INSTANCE
+	*same as static variable
+	* must create an object to use unless the method is also an instance method
+	
+
+	public class Variables {
+		static String middleName;
+		String lastName;
+		public static void idengtifyVAr(){
+			Variables var = new Variables ();
+			var.lastName = "Benz Vincent";
+			String firstname = "name"
+			System.out.println(firstName + "" + middleName + ""var.lastname);
+	}
+	public static void walalang() {
+		middleName = "Arellano";
+		System.out.println(middleName)
+	}
+	public void isapa() {
+		middleName = "Balbautog";
+		lastName = "Kulapnot";
+		System.out.println(middleName);
+	
+	}
+	}
+	
+	

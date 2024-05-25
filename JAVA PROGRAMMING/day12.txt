@@ -1,0 +1,19 @@
+import java.util.scanner
+
+
+public class Registration {
+
+	int opt1, opt2;
+	String promo;
+	
+	public static void main(String[] args) {
+		Systemo.out.println(******Registration******);
+		Registration in = new Registration
+		reg.start();
+}
+ 	
+	public void start() {
+		
+}
+
+}

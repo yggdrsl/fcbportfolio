@@ -1,0 +1,118 @@
+
+
+
+
+
+Day6.rar
+Compressed Archive
+
+Add class comment…
+
+Assignment: "Activity 3"
+Benz Vincent A. Geraldizo posted a new assignment: Activity 3
+Created Mar 8Mar 8
+package Day22;
+
+import java.util.Scanner;
+
+public class Bago {
+    Scanner in = new Scanner(System.in);
+    String[][] data = {
+            {"Charlou Pagdulagan","35","Male"},
+            {"Matthew Obate", "23", "Male"},
+            {"Engelmar Malabanan", "21", "Male"},
+            {"Bryan Clerigo", "27", "Male"},
+            {"Janine Lazaro", "28", "Female"}
+        };
+    public void run(){
+        System.out.println("Select a process:\n"
+                + "   [1] View all record\n"
+                + "   [2] View specific record\n"
+                + "   [3] View seleted column\n"
+                + "   [0] Exit");
+        System.out.print("Enter choice: ");
+        int opt = in.nextInt();
+        switch(opt){
+            case 1:
+                viewAll();
+                endTask();
+                break;
+            case 2:
+                viewRow();
+                endTask();
+                break;
+            case 3:
+                viewCol();
+                break;
+            case 0:
+                System.out.println("\n\n**********************Tapus na************************");
+                System.exit(0);
+                break;
+            default:
+                run();
+        }
+    }
+    void viewCol(){
+        System.out.println("--------------------------- View Column --------------------------- ");
+        System.out.println("Select a column:\n"
+                + "   [1] Name\n"
+                + "   [2] Age\n"
+                + "   [3] Gender\n"
+                + "   [0] Cancel");
+        System.out.print("Enter choice: "); int x = in.nextInt();
+        if(x>0&&x<4){
+            System.out.println("\n---------------------------------------------------------------------");
+            for(int i=0;i<data.length;i++){
+                System.out.println(data[i][x-1]);
+            }
+            System.out.println("\n---------------------------------------------------------------------");
+            endTask();
+        } else if(x==0){
+            System.out.println("\n---------------------------------------------------------------------");
+            run();
+        } else {
+            System.out.println("Invalid");
+            viewCol();
+        }
+        
+    }
+    void viewRow(){
+        System.out.println("--------------------------- View Row --------------------------- ");
+        System.out.print("Enter id number: "); int id = in.nextInt();
+        System.out.println("   ID\t\tName\t\t\t    Age\t\t\t   Gender\n");
+        System.out.print("   " + id + "   |");
+        for(int i=0;i<data[id-1].length;i++){
+            System.out.print("   "+data[id-1][i] + "  \t\t|");
+        }
+        System.out.println("\n---------------------------------------------------------------------");
+        System.out.println("\n\n");
+    }
+    void viewAll(){
+        System.out.println("--------------------------- View All Record --------------------------- ");
+        System.out.println("   ID\t\tName\t\t\t    Age\t\t\t   Gender\n");
+        
+        for(int i=0;i<data.length;i++){
+            System.out.print("   " + (i+1) + "   |");
+            for(int j=0;j<data[i].length;j++){
+                System.out.print("   "+data[i][j] + "  \t\t|");
+            }
+            System.out.println("");
+        }
+         System.out.println("---------------------------------------------------------------------");
+    }
+    void endTask(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Do you want to end process? [y/n]: "); String ans = input.nextLine();
+        if(ans.equalsIgnoreCase("y")){
+            System.out.println("\nThank you");
+        } else if(ans.equalsIgnoreCase("n")){
+            run();
+            System.out.println("");
+        } else {
+            System.out.println("\n---------- Invalid answer -----------\n\n");
+            endTask();
+        }
+    }
+}
+Bago.java
+Displaying Bago.java.

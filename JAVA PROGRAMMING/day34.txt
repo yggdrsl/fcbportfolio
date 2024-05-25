@@ -1,0 +1,54 @@
+package Day34;
+
+public class Polymorphism {
+    static int x = 23, 
+        y = 8, 
+        z = 11;
+    public static void main(String[] args) {
+        A a = new A();
+        //System.out.println(a.compute());
+        //a.compute(y);
+        //a.compute(x,y);
+        //a.compute(x,y,z);
+        B b = new B();
+        //System.out.println(b.compute());
+        b.compute(x,y);
+    }
+}
+
+class A extends Polymorphism{
+    
+    int compute(){// m1
+        return ((x*2)+z)-y; // (23*2)=46, ((46)+11)=57, (57)-8=49 
+    }
+    void compute(int a,int b){// m2
+        System.out.println(a + b);
+    }
+    void compute(int a){// m3
+        System.out.println(a * x);
+    }
+    void compute(int a,int b,int c){// m4
+        System.out.println("Output: " + a+b+c);
+    }
+}
+
+class B extends A{
+    
+    int compute(){
+        return x+z;
+    }
+    
+    public void compute(double a){ // line 42
+        System.out.println(a+x);
+    }
+    
+    
+    public void compute(int x, int y){
+        System.out.println("The program failed Successfully!!!");
+    }
+}
+/*
+polymorphism - is a concept by which we can perform a single function in different ways
+    method overloading - 1 method can perform different implementations in a class
+    method overriding - a method from superclass also exist in subclass
+*/

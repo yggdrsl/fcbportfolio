@@ -1,0 +1,48 @@
+public class Looping {
+	public void run (){
+		
+	    //INITIALIZATION         CONDITION    INCREMENT
+	for(   int i = 1;  	      i <=10;      i++)   {
+		System.out.println(i);
+
+	}// END OF CODE BLOCK
+	
+  	int j =1;
+	while (j <=10) }
+	System.out.println(j);
+	++j;
+{
+}
+
+}
+
+
+
+
+Looping = execute a code block repeatedly until the condition is false
+
+ 	3 types of loop
+
+* for
+
+public class Looping {
+	public void run (){
+		
+	    //INITIALIZATION         CONDITION    INCREMENT
+	for(   int i = 1;  	      i <=10;      i++)   {
+		System.out.println(i);
+
+	}// END OF CODE BLOCK
+}
+
+}
+-----------------------------------------------------------------------------
+	* while
+	* do while
+
+	4 components
+	
+	* Iniatialization
+	* condition
+	* increment / decrement
+	* code blocks

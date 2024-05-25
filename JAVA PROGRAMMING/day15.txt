@@ -1,0 +1,140 @@
+public class nestedloop{
+	public void repeat () {
+		for (int i =1; i<=5; i++) {
+			System.out.print(i);
+			for ( int j =1; j<=5; j++){
+				System.out.println( " "+j);
+				
+
+			}
+		
+		}
+
+	}
+}
+
+
+
+
+
+/*
+  var i           var j                 condition               codeblock
+1st.0 i=1				true			execute innerloop
+		1st.i j==1		true			execute codeblock		
+		2nd.i j==2		true			execute codeblock
+		3rd.i j==3  		true			execute codeblock
+		4th.i j==4 		true			execute codeblock
+		5th.i j==5		true			execute codeblock
+		6th.i j==6		false			proceed to outer
+1st.0 i=2				true			execute innerloop
+		1st.i j==1		true			execute codeblock		
+		2nd.i j==2		true			execute codeblock
+		3rd.i j==3  		true			execute codeblock
+		4th.i j==4 		true			execute codeblock
+		5th.i j==5		true			execute codeblock
+		6th.i j==6		false			proceed to outer
+1st.0 i=3				true			execute innerloop
+		1st.i j==1		true			execute codeblock		
+		2nd.i j==2		true			execute codeblock
+		3rd.i j==3  		true			execute codeblock
+		4th.i j==4 		true			execute codeblock
+		5th.i j==5		true			execute codeblock
+		6th.i j==6		false			proceed to outer
+1st.0 i=4				true			execute innerloop
+		1st.i j==1		true			execute codeblock		
+		2nd.i j==2		true			execute codeblock
+		3rd.i j==3  		true			execute codeblock
+		4th.i j==4 		true			execute codeblock
+		5th.i j==5		true			execute codeblock
+		6th.i j==6		false			proceed to outer
+1st.0 i=5				true			execute innerloop
+		1st.i j==1		true			execute codeblock		
+		2nd.i j==2		true			execute codeblock
+		3rd.i j==3  		true			execute codeblock
+		4th.i j==4 		true			execute codeblock
+		5th.i j==5		true			execute codeblock
+		6th.i j==6		false			proceed to outer
+1st.0 i=6				false			end
+		1st.i j==1		true			execute codeblock		
+		2nd.i j==2		true			execute codeblock
+		3rd.i j==3  		true			execute codeblock
+		4th.i j==4 		true			execute codeblock
+		5th.i j==5		true			execute codeblock
+		6th.i j==6		false			proceed to outer8
+*/
+
+
+public class nestedloop{
+	public void repeat () {
+		for (int i =1; i<=5; i++) {	
+			for ( int j =1; j<=i; j++){
+			System.out.println( "*");				
+			}
+			System.out.print("");
+		}
+
+	}
+}
+								
+
+/*
+
+*
+**
+***
+****
+*****
+
+
+
+*/
+
+
+for (int i = 1; i<=5; i++)   {
+            for (int j = i; j<=5; j++)  {
+            System.out.print("*");
+
+}
+}
+
+for (int i=0; i<=5; i++) {
+            for(int j=1; j<=5-i; j++) {
+
+}
+}
+
+*****
+****
+***
+**
+*
+
+
+
+
+package exercise;
+
+
+public class qwer {
+	public void repeat () {
+		for (int i =1; i<=5; i++) { // row
+			for ( int j =i; j<5; j++){ //1st inner
+			System.out.print(" ");	
+			}for (int j =1; j<=i; j++) //2nd inner
+                        System.out.print ("* ");
+		}
+                System.out.println();
+
+	}
+	for (int i=1; i<=3; i++) {
+
+	}for (int j =1; j<=4; j++) {
+	}
+} 
+
+
+
+
+
+
+

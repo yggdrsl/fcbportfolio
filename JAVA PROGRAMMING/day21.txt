@@ -1,0 +1,51 @@
+public class Grouping {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String [] names = new String[25];
+		int x = 0;
+		System.out.println("Enter names");
+
+		// input element for array names
+		for(int i = 0; i<names.length; i++) {
+			System.out.println((i +1) + ", ");
+			names[i] = in.nextLine();
+		
+		}
+		// shuffle elements
+		shuffle(names);
+		String sumting; in.nextLine();
+
+		//display new order
+		System.out.println(-------------------------------);
+		for(int i =1; i<=5; i++) { // group
+			System.out.println("Group" +i);
+			for(int j =1; j<=5; j++) {
+				System.out.println("  " + names[x]);
+				x++;
+			}
+			if (i!=5) {
+				String something = in.nextLine();
+			}else {
+				System.out.println("*******Thank you");
+			}
+		}
+	}
+
+	static void shuffle(String[] members) {
+		Random rndm = new Random();
+		for(int i =0; i<members.length; i++) {
+		   int new Index = rndm.nextInt(i+1);   //9
+		   String stud = members[i];            // stud=a, i=0
+		   members[i] = members[newIndex];      // newIndex=9, i=9
+		   members[newIndex] = stud;
+		}
+	}	
+}
+
+
+
+/*
+ArrayList <String> newOrder = new ArrayList<>(Arrays.asList(names));
+Collections.shuffle(newOrder);
+newOrder.toArray(names);
+*/

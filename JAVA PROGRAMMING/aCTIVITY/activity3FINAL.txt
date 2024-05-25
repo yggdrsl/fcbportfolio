@@ -1,0 +1,45 @@
+
+
+package activity3;
+import java.util.Scanner;
+
+
+public class puno {
+    public void run () {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter BirthDate:");
+        System.out.println("Month:");String month = in.next();
+        System.out.println("Day:");int day = in.nextInt();
+       
+      
+        
+              if ((( month.equalsIgnoreCase("january") && day >=20 && day <=31)) || (( month.equalsIgnoreCase("february") && day >=1 && day <=18))){                      
+                System.out.println("Aquarius");
+                 } else if ((( month.equalsIgnoreCase("february") && day >=19 && day <=31)) || (( month.equalsIgnoreCase("march") && day >=1 && day <=20))){                      
+                System.out.println("Pisces");
+                 } else if ((( month.equalsIgnoreCase("march") && day >=21 && day <=31)) || (( month.equalsIgnoreCase("april") && day >=1 && day <=19))){                      
+                System.out.println("Aries");
+                 } else if ((( month.equalsIgnoreCase("april") && day >=20 && day <=31)) || (( month.equalsIgnoreCase("may") && day >=1 && day <=20))){                      
+                System.out.println("Taurus");
+                 } else if ((( month.equalsIgnoreCase("may") && day >=21 && day <=31)) || (( month.equalsIgnoreCase("june") && day >=1 && day <=22))){                      
+                System.out.println("Gemini");
+                 } else if ((( month.equalsIgnoreCase("june") && day >=21 && day <=31)) || (( month.equalsIgnoreCase("july") && day >=1 && day <=22))){                      
+                System.out.println("Cancer");
+                 } else if ((( month.equalsIgnoreCase("july") && day >=23 && day <=31)) || (( month.equalsIgnoreCase("august") && day >=1 && day <=22))){                      
+                System.out.println("Leo");
+                 } else if ((( month.equalsIgnoreCase("august") && day >=23 && day <=31)) || (( month.equalsIgnoreCase("september") && day >=1 && day <=22))){                      
+                System.out.println("Virgo");
+                 } else if ((( month.equalsIgnoreCase("september") && day >=23 && day <=31)) || (( month.equalsIgnoreCase("october") && day >=1 && day <=21))){                      
+                System.out.println("Libra");
+                 } else if ((( month.equalsIgnoreCase("october") && day >=22 && day <=31)) || (( month.equalsIgnoreCase("november") && day >=1 && day <=21))){                      
+                System.out.println("Scorpio");
+                 } else if ((( month.equalsIgnoreCase("november") && day >=22 && day <=31)) || (( month.equalsIgnoreCase("december") && day >=1 && day <=21))){                      
+                System.out.println("Sagittaius");
+                 } else if ((( month.equalsIgnoreCase("december") && day >=22 && day <=31)) || (( month.equalsIgnoreCase("january") && day >=1 && day <=19))){                      
+                System.out.println("Capricorn");
+                 } else {
+              
+                System.out.println("ERROR ON:" + day +"," + month);
+         }             
+    }
+}

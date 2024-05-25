@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title> TITLE PAGE </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="MyCSS\myform.css">
+<style>
+</style>
+
+</head>
+<body>
+
+<h2> </h2>
+<p>  </p>
+
+<header>
+ <h2> </h2>
+</header>
+
+<section>
+ <nav>
+  <ul>
+     <li> </li>
+     <li> </li>
+  </ul>
+ </nav>
+ <article>
+ </article>
+</secttion>
+
+<footer>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+public class Main {
+	public static void main (String[] args) {
+		public void run () {
+			String name1 ="Bryan", name2= "Noriel", name3 = "Janine";
+			//data type variable;
+			String [] names; {"Bryan","Janine","Noriel"};
+			String [] name = new String[3];
+			for ( int i=0; i<name.length; i++);
+			name [i] = in.nextLine();
+			
+			String [] name = new String[3];
+			name[0] = "Bryan";
+			name[1] = "Janine";
+			name[2] = "Noriel";
+					
+			for (int i = 0; i<names.length; i++) {
+			if (i == names.length -1) {
+
+				System.out.println(names[i]);
+			}else{
+			  System.out.println(names[1] + " , ");
+			}
+			}
+//array method			System.out.println("array method");
+			System.out.println(Arrays.toString(names));
+			
+// for each		for(String a = names) {
+			System.out.println(a);
+
+			}
+	
+		}	
+	
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+ARRAYS = store multiple value of the same type.

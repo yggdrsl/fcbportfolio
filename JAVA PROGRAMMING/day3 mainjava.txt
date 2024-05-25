@@ -1,0 +1,14 @@
+public class Main {
+
+	public static void main (String[] args) {
+		//Declartion.declare();
+		Variables.identifyVar();
+		Variables.walalang();
+		Variables var = new Variables();
+		var.isapa();
+
+   }
+		
+
+}
+

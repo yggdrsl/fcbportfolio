@@ -1,0 +1,62 @@
+public class Main {
+	public static void main(String[] args) {
+	
+		for (int i = 0; i<num; i++) {
+				System.out.println( num [i] [i] + " ");
+			}
+
+		/* output
+		  1st loop = [0] [0]; 1
+		  2nd loop = [1] [1]; 5
+		  3rd loop = [2] [2]; 9
+
+		*/		
+	}	
+}
+
+
+public class MultiDimensional {
+	public void run {
+		int [] [] num = {
+			{1,2,3},
+			{4,5,6},
+			{7,8,9}
+
+			};
+			
+			System.out.println(num [2] [0]);
+
+			for (int i = 0; i<num; i++) {
+				  System.out.println("Row "  + (i+1));
+				for (int j=0; j<num[i].lenth; j++) {
+				   System.out.println(num [i] [j]);
+					if(j!=num[i].length -1) {
+						System.out.print(", ")
+					}
+
+				}
+				System.out.println("");
+			}
+
+	}	
+}
+
+
+
+
+
+pubic class multi {
+ public void run () {
+	int col =2'
+	int [] [] num = {
+		{1,2,3},
+		{4,5,6},
+		{7,8,9}
+	};
+	System.out.println("column" + (col+1) + ":");
+	  for (int =0; i<num; i++) {
+			System.out.println(num [i] [col]);
+		}
+
+	}
+}	

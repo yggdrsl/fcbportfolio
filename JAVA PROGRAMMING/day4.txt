@@ -1,0 +1,48 @@
+public class DataTypes {
+
+	boolean a = true;
+	byte b1 = 100, b2 = 100;
+	short c = 129;
+	int d = 5;
+	long e;
+	float f;
+	double g;
+	char h = 65;
+	String i = "shoppee";
+	Interger j = 10;
+
+	public  void run() {
+		a = false;
+		System.out.println(a);
+		System.out.println(i.toUpperCase);
+		System.out.println(b1 + b2);
+		System.out.println(h);
+		System.out println(d + j);
+}
+
+}
+
+Data types = specify what kind of data to be stored in a variable
+
+	2 groups of Data types
+
+*Primitive - commonly used data type in a program
+	   - lowercase
+	   - references data type	
+	*boolean -> true / false	
+	*byte ->   
+	*short->   
+	*int ->    
+	*long->
+	*float
+	*double
+	*char
+
+
+
+	
+
+*Non-Primitive - user define data types
+	       - can manipulate value
+	       
+	*String

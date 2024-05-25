@@ -1,0 +1,124 @@
+public class operator{
+
+	public static void ternary () {
+		int x = 100;
+		int a = x++; // a = 100, x = 101
+		int b = ++x; // b= 102, x =102
+		int c = x++;// c= 102, x = 103
+		int d = (a<b)?(a<c)?a:(b<c)?b:c:x;
+		System.out.println(d);
+	}
+}
+------------------------------------------------------------------------------
+
+Ternary =  one live code for if-else statement
+	=  shortcut key of  if else statement
+	
+	 (), ? , : 
+
+
+public class operator{
+
+	public static void ternary () {
+		int a= 10,b= 11;
+		System.out.println((a<b)?a:b);
+		System.out.println((a<b)?"True":b""False");	
+	if (a<b) {
+		System.out.println(a);
+	} else  {
+		System.out.printlin(b);
+	}
+	
+	}
+}
+------------------------------------------------------------------------------------------------
+public class operator{
+
+	public static void ternary () {
+		String word = "JAVA";	
+	
+		System.out.println((word.equalsIgnoreCase("java))?"match":"not match";
+		System.out.println((word.equalsIgnoreCase("java))?word.toLowerCase():"not match";
+	
+	}
+}
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+
+
+
+Control Flow Statements = Control the flow of exucution
+
+	3 WAYS TO EMPLOY CONTROL FLOW
+
+ * DECISION MAKING
+
+   1. if statements
+
+	A.  SIMPLE - 1 code block
+
+public class cfs{
+	public voud run() {
+		int num = 5;
+		if(num % 2 ==1){
+			System.out.println("num us an odd number");
+		}
+	}	
+}
+----------------------------------------------------------------------------
+public class cfs{
+	public voud run() {
+		int num = 6;
+		if(num % 2 ==0){
+			num++;	
+		}
+		System.out.println(num);
+	}	
+}
+---------------------------------------------------------------------------------
+
+	B. if-else - 2 code blocks, 1 for true ,1 for flase
+
+
+public class cfs{
+	public voud run() {
+		int num = 7;
+		if(num % 2 ==0){
+			num++;	
+		} else {
+			System.out.println("");
+		}
+		System.out.println(num);
+	}	
+}
+-------------------------------------------------------------------------------
+
+public class cfs{
+	public voud run() {
+		String x;
+		int num = 7;
+		if(num % 2 ==0){
+			x = even;	
+		} else {
+			x = odd;
+		}
+		System.out.println(num + "is an" + x + "number");
+	}	
+}
+--------------------------------------------------------------------------------
+	
+	C. if=else-if - multiple conditions
+
+
+
+
+		      - 
+	D. nested if
+---------------------------------------------------------------------------------
+    2. switch statements
+
+ * LOOPING
+ * BRANCHING
+
+

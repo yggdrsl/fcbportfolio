@@ -1,0 +1,90 @@
+
+
+Operators =  are special symbols that is used to perform a certain operation
+		
+	typer of operators
+
+unary = ++ (increment)  , -- (decrement) , - (negate) , !
+-------------------------------------------------------------------------------------------------
+
+++ (increment)
+
+public class Operators {
+	public static void unary() {
+		int a = 5;
+		System.out.println(++a);
+}
+	
+}
+
+
+public class Operators {
+	public static void unary() {
+		int x = 5;
+		int a = ++x;
+		int b= x ++;
+		System.out.println(b);
+		System.out.println(x);
+		System.out.println(a);
+}
+	
+}
+---------------------------------------------------------------------------------------------
+- (negate)
+
+public class Operators {
+	public static void unary() {
+		int a = 8;
+		System.out.println(-(-8)); //8
+}
+	
+}
+----------------------------------------------------------------------------------------------
+!
+
+public class Operators {
+	public static void unary() {
+		int a = 8;
+		System.out.println(a !=8); //false
+}
+	
+}
+-----------------------------------------------------------------------------------------------
+
+arithemtic = operator that perform mathematical operation
+
+	*, /, +, -, %
+
+public class Operators {
+	public static void arithmetic() {
+		int a = 60;
+		int b= 8;
+		System.out.println( a + b); // 68
+		System.out.println( a - b); // 52
+		System.out.println( a * b); // 480
+		System.out.println( a / b); // 7
+		System.out.println( a % b); // 4
+	
+}
+----------------------------------------------------------------------------------------------
+
+shift = are used to shift the bits value to the left or right
+
+	<< , >>
+
+public class Operators {
+	public static void shift() {
+		int a = 10; // 1010 (binary)
+		System.out.println(a<<2); //40  
+	}	
+	
+}
+
+a = 10		a<<2=40				a=10		a>>2=2
+
+1010		 1 0  1000(to right)		1010		10-- (toleft)
+8421		32 16 8421			8421		21
+8+2 =10	        32  + 8    =40                  8+2- =10	2   =2
+--------------------------------------------------------------------------------------------------
+
+

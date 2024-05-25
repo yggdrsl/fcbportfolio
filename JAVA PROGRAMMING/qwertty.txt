@@ -1,0 +1,15 @@
+}
+    public static void multiply (){
+        int product = 1;
+        for (int i=-1; i<=iteration; i++){
+             if (i==iteration){
+               continue;
+            }else
+                System.out.print(startNumber  +(i*cd )+ " * ");
+             product *=i;
+        }
+           
+        System.out.println(" = " +product );
+    }
+
+    }

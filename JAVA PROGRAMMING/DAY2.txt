@@ -1,0 +1,27 @@
+public class Main {
+	public static void main(string[] args){
+		System.out.println("Hello World!);
+	}
+
+}
+
+Access Modifier= are keywords useed in Java to control the visibility of class and other 
+		 members within the program.
+
+
+		4 typer of Modifiers
+		 *public - accessible/visible to all within the project
+		 *private - accessible/visible to same class only
+		 *protected- accessible/visible to all within same package or otheer class by subclasses(Inheritance)
+		 *default - modifier without declaration
+ 		 	  -accessible ti any class within the same package
+
+class - blueprint
+	contains everything
+
+
+main method - starting point of execution
+
+method - implements a code block
+
+statement- command

@@ -1,0 +1,110 @@
+
+package Day11;
+
+import java.util.Scanner
+
+
+public class Registration {
+    int opt1,opt2;
+    String promo;
+    public static void main(String[] args) {
+        System.out.println("***************************** LOAD REGISTRATION *****************************");
+        Registration reg = new Registration();
+        reg.start();
+    }
+    public void start(){
+        Scanner in = new Scanner(System.in);
+        System.out.println("Select a Promo: ");
+        System.out.println("   [1] Text Only\n"
+                + "   [2] Call Only\n"
+                + "   [3] Call & Text\n"
+                + "   [4] Data Services\n"
+                + "   [5] Full Package\n"
+                + "   [0] Exit");
+        System.out.print("Enter choice: "); opt1 = in.nextInt();
+        if(opt1==1){
+            promo = "Text";
+            System.out.println("\n---------------------------------------------------------------------");
+            System.out.println("You select " + promo + " Promo!");
+            System.out.println("    [1] Subscribe\n"
+                    + "    [0] Cancel");
+            System.out.print("Enter choice: "); opt2 = in.nextInt();
+            System.out.println("---------------------------------------------------------------------\n");
+            if(opt2==1){
+                System.out.println("You are now subscribed to " + promo + " Promo....");
+            } else if(opt2==0){
+                start();
+                System.exit(0);
+            }
+        } else if(opt1==2){
+            promo = "Call";
+            System.out.println("\n---------------------------------------------------------------------");
+            System.out.println("You select " + promo + " Promo!");
+            System.out.println("    [1] Subscribe\n"
+                    + "    [0] Cancel");
+            System.out.print("Enter choice: "); opt2 = in.nextInt();
+            System.out.println("---------------------------------------------------------------------\n");
+            if(opt2==1){
+                System.out.println("You are now subscribed to " + promo + " Promo....");
+            } else if(opt2==0){
+                start();
+                System.exit(0);
+            }
+        } else if(opt1==3){
+            promo = "Call & Text";
+            System.out.println("\n---------------------------------------------------------------------");
+            System.out.println("You select " + promo + " Promo!");
+            System.out.println("    [1] Subscribe\n"
+                    + "    [0] Cancel");
+            System.out.print("Enter choice: "); opt2 = in.nextInt();
+            System.out.println("---------------------------------------------------------------------\n");
+            if(opt2==1){
+                System.out.println("You are now subscribed to " + promo + " Promo....");
+            } else if(opt2==0){
+                start();
+                System.exit(0);
+            }
+        } else if(opt1==4){
+            promo = "Data Services";
+            System.out.println("\n---------------------------------------------------------------------");
+            System.out.println("You select " + promo + " Promo!");
+            System.out.println("    [1] Subscribe\n"
+                    + "    [0] Cancel");
+            System.out.print("Enter choice: "); opt2 = in.nextInt();
+            System.out.println("---------------------------------------------------------------------\n");
+            if(opt2==1){
+                System.out.println("You are now subscribed to " + promo + " Promo....");
+            } else if(opt2==0){
+                start();
+                System.exit(0);
+            }
+        } else if(opt1==5){
+            promo = "Full Package";
+            System.out.println("\n---------------------------------------------------------------------");
+            System.out.println("You select " + promo + " Promo!");
+            System.out.println("    [1] Subscribe\n"
+                    + "    [0] Cancel");
+            System.out.print("Enter choice: "); opt2 = in.nextInt();
+            System.out.println("---------------------------------------------------------------------\n");
+            if(opt2==1){
+                System.out.println("You are now subscribed to " + promo + " Promo....");
+            } else if(opt2==0){
+                start();
+                System.exit(0);
+            }
+        } else if(opt1==0){
+            System.out.println("\n*---------------------------*");
+            System.out.println("|                           |");
+            System.out.println("|        THANK YOU!!!       |");
+            System.out.println("|                           |");
+            System.out.println("*---------------------------*");
+        } else {
+            System.out.println("Invalid Input!!!\n\n");
+            start();
+            System.exit(0);
+        }
+    }
+    
+}
+Registration.java
+Displaying Registration.java.

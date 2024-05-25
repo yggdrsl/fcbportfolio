@@ -1,0 +1,46 @@
+
+package activity07;
+
+
+public class Activity07 {
+
+   
+    public static void main(String[] args) {
+      person me = new person();
+       me.introduce();
+       student a = new student();
+       a.introduce();
+       Professor b = new Professor();
+       b.introduce();
+              }
+}
+     class person{
+        String name= "Michael";
+        int age= 43;
+        void person (String n,int a){
+            introduce();
+        }
+       void introduce(){
+           System.out.println("Hello, my name is "+ name+ " and I am "+age+" years old.");
+       }  
+}
+  class student extends person {
+      int studentid= 1234;
+      String major="Something";
+      @Override
+     void introduce(){
+         System.out.println(" Hi, I'm "+name+" a "+age+"-year-old student with ID "+studentid+", majoring in "+ major );
+         
+         
+     }
+  }
+    class Professor extends person {
+        String department= "Science";
+        String researchArea= "Biology";
+        @Override
+        void introduce (){
+            System.out.println("Greetings, I'm Dr."+name+", a "+age+ "-year-old professor it the "+department+" deparment, specializing in "+researchArea);
+        }
+    }
+
+
